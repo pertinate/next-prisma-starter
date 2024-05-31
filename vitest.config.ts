@@ -9,5 +9,6 @@ export default defineConfig({
       '~/': fileURLToPath(new URL('./src/', import.meta.url)),
     },
     setupFiles: ['dotenv/config'],
+    globalSetup: ['./vite.global-setup.ts'],
   },
 });

@@ -19,3 +19,7 @@ export const prisma: PrismaClient =
 if (env.NODE_ENV !== 'production') {
   prismaGlobal.prisma = prisma;
 }
+
+export default {
+  prisma,
+};
